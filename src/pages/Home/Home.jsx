@@ -5,9 +5,8 @@ import hero_banner from "../../assets/hero_banner.jpg"
 import hero_title from "../../assets/hero_title.png"
 import play_icon from "../../assets/play_icon.png"
 import info_icon from "../../assets/info_icon.png"
-import TitleCards from "../../components/TitleCards/TitleCards"
+import TitleCards from "../../components/TitleCards/TitleCards.jsx"
 import Footer from '../../components/Footer/Footer'
-
 
 const Home = () => {
   return (
@@ -26,10 +25,10 @@ const Home = () => {
           </div>
         </div>
         <div className="more-cards">
-        <TitleCards title={"Blockbuster Movies"}/>
-        <TitleCards title={"Only on Netflix"}/>
-        <TitleCards title={"Upcoming"}/>
-        <TitleCards title={"Top pics for You"}/>
+        <TitleCards title={"Blockbuster Movies"} category={"top_rated"}/>
+        <TitleCards title={"Only on Netflix"} category={"popular"}/>
+        <TitleCards title={"Upcoming"} category={"upcoming"}/>
+        <TitleCards title={"Top pics for You"} category={"now_playing"}/>
         </div>
         <Footer/>
     </div>
